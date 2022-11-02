@@ -1,12 +1,13 @@
 import requests
 
 
+URL = "https://api.agify.io?name=meelad"
+PARAMS = {"name": "meelad"}
+response = requests.get(URL, PARAMS)
 
-# erewhfgwhjefhsdj
-# dfs
-# sortedfsd
-# finallysdf
-# sortedfsdfsd
-# finallys
-# #tes
-# fdfdfd
+if response.status_code != 200:
+    exit("Something went wrong")
+
+
+
+
