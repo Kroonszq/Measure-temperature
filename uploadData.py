@@ -59,12 +59,8 @@ def get_humidity():
         return h
 
 def main():
-    while True:
-        uploadData(time_stamp(), get_temperature(),  get_humidity(),  get_pressure())
-        time.sleep(10)
+    uploadData(time_stamp(), get_temperature(),  get_humidity(),  get_pressure())
 
 if __name__ == "__main__":
     main()
-else:
-    print("yoo")
 
